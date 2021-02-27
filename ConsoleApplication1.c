@@ -3,7 +3,7 @@
 
 int main()
 {
-    int result = pow(3,8);
+    int result = pow(3,7);
     printf("%d\n",result);
 
 }
