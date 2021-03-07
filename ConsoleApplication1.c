@@ -24,7 +24,7 @@ int main()
     p_add(&ans, a, b);
 
 
-練習ブランチ１での変更
+練習ブランチ１での再変更
 
 
     return 0;
