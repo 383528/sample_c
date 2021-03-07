@@ -10,7 +10,6 @@ void p_add(int *ans, int a, int b) {
 }
 int main()
 {
-    練習ブランチ２での変更
     int a = 40;
     int b = 30;
     int ans=0;
@@ -23,11 +22,7 @@ int main()
 
     p_add(&ans, a, b);
 
-
-練習ブランチ１での再変更
-
-
     return 0;
 
-
+変更変更
 }
