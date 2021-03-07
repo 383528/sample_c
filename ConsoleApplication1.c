@@ -10,7 +10,6 @@ void p_add(int *ans, int a, int b) {
 }
 int main()
 {
-
     int a = 40;
     int b = 30;
     int ans=0;
@@ -23,13 +22,7 @@ int main()
 
     p_add(&ans, a, b);
 
-
-
-
-
-
-
     return 0;
 
-
+変更変更
 }
