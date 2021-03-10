@@ -1,28 +1,20 @@
 ﻿#include <stdio.h>
 #include <math.h>
 
-int add(int a, int b) {
-    return a + b;
-}
-void p_add(int *ans, int a, int b) {
-    *ans = a + b;
-    printf("%d\n", *ans);
-}
-int main()
-{
-    int a = 40;
-    int b = 30;
-    int ans=0;
+struct person{
+    char *name;
+    int age;
+};
 
-    printf("%d\n", ans);
+int main(){
+    struct person matsumoto = {"matsumoto",30};
+    struct person *p_matsumoto;
 
-    ans = add(a, b);
+    p_matsumoto = &matsumoto;
+    p_matsumoto->name = "komatsu";
 
-    printf("%d\n", ans);
-
-    p_add(&ans, a, b);
+    printf("%s\n",matsumoto.name);
+    printf("%p\n",p_matsumoto);
 
     return 0;
-
-変更変更
 }
