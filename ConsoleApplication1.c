@@ -17,5 +17,5 @@ int main(){
     printf("%p\n",p_matsumoto);
 
     return 0;
-
+hennkou
 }
