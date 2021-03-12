@@ -1,9 +1,20 @@
-﻿#include <stdio.h>
+#include <stdio.h>
 #include <math.h>
 
-int main()
-{
-    int result = pow(3,8);
-    printf("%d\n",result);
+struct person {
+    char* name;
+    int age;
+};
 
+int main() {
+    struct person matsumoto = { "matsumoto",30 };
+    struct person* p_matsumoto;
+
+    p_matsumoto = &matsumoto;
+    p_matsumoto->name = "komatsu";
+
+    printf("%s\n", matsumoto.name);
+    printf("%p\n", &p_matsumoto);
+
+    return 0;
 }
